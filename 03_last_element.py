@@ -13,7 +13,7 @@ def last_element(lst):
         True
     """
 
-    if not len(lst):
-        return None
+    if lst:
+        return lst[-1]
 
-    return lst[-1]
+   #functions return none on its own if theres no return

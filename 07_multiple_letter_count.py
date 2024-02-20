@@ -10,10 +10,6 @@ def multiple_letter_count(phrase):
     letters = {}
 
     for letter in phrase:
-       #letters.get(letter, 1)
-        if letter in letters:
-           letters[letter] += 1
-        else:
-            letters[letter] = 1
+       letters[letter] = letters.get(letter, 0) + 1
 
     return letters
